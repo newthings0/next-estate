@@ -13,6 +13,7 @@ import {
 
 import { useUser } from '@clerk/nextjs';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 export default function CreateListing() {
   const { isSignedIn, user, isLoaded } = useUser();
@@ -358,11 +359,11 @@ export default function CreateListing() {
                 key={url}
                 className='flex justify-between p-3 border items-center'
               >
-                {/* <img
+                <Image
                   src={url}
                   alt='listing image'
                   className='w-20 h-20 object-contain rounded-lg'
-                /> */}
+                />
                 <button
                   type='button'
                   onClick={() => handleRemoveImage(index)}
