@@ -6,6 +6,7 @@ import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 
 import { useEffect, useState } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
+
 export default function Header() {
   const searchParams = useSearchParams();
   const router = useRouter();
